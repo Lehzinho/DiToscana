@@ -1,0 +1,37 @@
+:root{
+  --cor-vermelha: #E02035;
+  --cor-verde: #0C9933;
+  --cor-verde-escuro: #1A3E24;
+}
+
+@font-face {
+  font-family: 'VeneerItalic';
+  src: url(../../fonts/VeneerThreeItalic.ttf);
+}
+.font-h2{
+    font: 400 2rem/1.5 'VeneerItalic', sans-serif;  
+}
+.font-h1{
+  font: 400 6rem/.75 'VeneerItalic', sans-serif;
+}
+.font-h3{
+  font: 400 3rem/.75 'VeneerItalic', sans-serif;
+}
+.font-ephesis{
+  font: 400 3rem/.75 'Ephesis', sans-serif;
+}
+.font-Pop{
+  font: 500 1.25rem/1.75 'Poppins', Arial;
+}
+.cor-branca{
+  color: white;
+}
+.cor-vermelha{
+  color: var(--cor-vermelha);
+}
+.cor-verde{
+  color: var(--cor-verde);
+}
+.cor-verde-escuro{
+  color: var(--cor-verde-escuro);
+}

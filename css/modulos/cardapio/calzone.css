@@ -1,0 +1,64 @@
+.calzone {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url(../../../Img/backgrounds/backgroundOptimizados/CalzoneBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.calzone-infotext{
+  margin: auto;
+  text-align: center;
+}
+.calzone-infotext h1{
+ padding-bottom: 40px;
+}
+.calzone-ingredientes{
+  margin: auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.calzone-ingredientes ul{
+  margin: 40px 70px;
+  font-weight: 700;
+}
+.calzone-ingredientes::after{
+  content: "R$40,00";
+  position: absolute;
+  top: 140px;
+  right: -200px;
+  font-family: "VeneerItalic", sans-serif;
+  font-size: 4rem;
+  padding: 10px 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  transform: rotate(0.9turn);
+}
+.ingredientes-header{
+  grid-column: span 2;
+  text-align: center;
+}
+.adicional{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  grid-column: span 2;
+
+}
+
+
+
+@media (max-width: 1020px){
+.ingredientes-header{
+  margin-top: 100px;
+}
+  .calzone-ingredientes::after{
+    top: -20px;
+    right: 30%;
+    transform: rotate(9turn);
+  }
+}

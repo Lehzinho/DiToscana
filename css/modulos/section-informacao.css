@@ -1,0 +1,52 @@
+.section-informacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url("../../Img/img_optimizadas/Massa.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+.info-bg{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(250, 250, 250, .4);
+  border: 2px solid var(--cor-vermelha);
+  border-radius: 10px;
+  padding: 50px 10px;
+  max-width: 500px;
+  height: 250px;
+  overflow-y:hidden;
+}
+.info-bg h3{
+  text-align: center;
+  padding: 0 10px;
+}
+.info-bg p{
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: var(--cor-vermelha);
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.info-text{
+  width: 100%;
+  margin-top: 20px;
+  height: 190px;
+  overflow-y: scroll;
+}
+.info-text::-webkit-scrollbar-track{
+  background-color: #faf6ed;
+}
+.info-text::-webkit-scrollbar {
+  width: 16px;
+}
+.info-text::-webkit-scrollbar-thumb {
+  background: var(--cor-vermelha);
+  border-left: 1px solid #faf6ed;
+  border-right: 1px solid #faf6ed;
+}
