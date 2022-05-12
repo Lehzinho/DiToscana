@@ -29,13 +29,12 @@
   left: -120px;
   margin-left: calc((100% - 22vw) - 40px);
 }
-.section-pizza div::before{
+.section-pizza div::before {
   content: "";
   background-image: url(../../Img/Vectors/right-green-arrow.svg);
   right: 120px;
-  margin-right: calc((100% - 22vw) - 300px)
+  margin-right: calc((100% - 22vw) - 300px);
 }
-
 
 .section-esfihas::before,
 .section-calzone::before {
@@ -54,7 +53,7 @@
   position: absolute;
   left: 0;
 }
-.cardapio div{
+.cardapio div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -64,11 +63,12 @@
   padding: 20px;
   position: relative;
 }
+
 .section-calzone div,
 .section-esfihas div {
   margin-left: calc((100% - 30vw) - 750px);
 }
-.section-pizza div{
+.section-pizza div {
   margin-right: calc((100% - 45vw) - 550px);
 }
 .cardapio div::before {
@@ -78,29 +78,28 @@
   height: 300px;
   top: -25px;
 }
+
 @media (max-width: 700px) {
   .section-calzone h3,
   .section-pizza h3,
-  .section-esfihas h3{
+  .section-esfihas h3 {
     font-size: 1.75rem;
   }
   .section-calzone h1,
   .section-pizza h1,
-  .section-esfihas h1{
+  .section-esfihas h1 {
     font-size: 4rem;
     margin: 0 10px;
   }
   .section-calzone div,
   .section-pizza div,
-  .section-esfihas div{
-    width:min-content;
+  .section-esfihas div {
+    width: min-content;
   }
-  .promocoes-bg{
+  .promocoes-bg {
     display: none;
   }
-
 }
-
 
 @media (max-width: 1050px) {
   .cardapio div:nth-child(odd) {
@@ -137,15 +136,14 @@
     margin-left: 30px;
   }
   .section-esfihas div,
-  .section-calzone div{
+  .section-calzone div {
     margin-left: 90px;
   }
-  .section-pizza div{
+  .section-pizza div {
     margin-right: 90px;
   }
-  .section-pizza div::before{
+  .section-pizza div::before {
     right: -110px;
     margin-right: 0;
   }
-
 }
