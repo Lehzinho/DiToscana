@@ -74,4 +74,9 @@
     right: 200px;
     transform: rotate(0turn);
   }
+  .tamanho{
+    font-size: .75rem;
+    text-align: center;
+  }
+
 }
