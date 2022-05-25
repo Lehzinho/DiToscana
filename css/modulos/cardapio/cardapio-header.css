@@ -1,0 +1,168 @@
+.cardapio-header {
+  display: flex;
+  justify-content: space-between;
+}
+.cardapio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.cardapio-info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.cardapio-info div {
+  text-align: center;
+  width: 350px;
+}
+.cardapio-info img {
+  align-items: center;
+  margin-left: 30px;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 10px;
+}
+.close-button {
+  margin: 20px;
+}
+.cardapio-logo {
+  margin-left: 10px;
+}
+.cardapio-conteudo {
+  padding-bottom: 500px;
+}
+.cardapio-conteudo1 {
+}
+
+.cardapio-conteudo h1,
+.cardapio-conteudo1 h1 {
+  margin: 80px 20px;
+}
+.cardapio-conteudo div,
+.cardapio-conteudo1 div {
+  margin-bottom: 10px;
+}
+
+.cardapio-items {
+  display: flex;
+  align-items: bottom;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+.cardapio-items span {
+  font-size: 1.5rem;
+}
+
+.cardapio-nome {
+  flex: 1;
+  display: inline-flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.cardapio-nome:after {
+  content: "";
+  width: 100%;
+  border-bottom: 4px dotted white;
+  height: 4px;
+  margin-right: 10px;
+}
+.cardapio-nome span {
+  font-style: italic;
+}
+.cardapio-descricao {
+  margin: 5px 0 0 25px;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.tabmenu {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+.tabmenu div {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0px 10px 10px;
+  border-radius: 0 0 5px 5px;
+}
+.tabmenu a {
+  padding: 5px 0;
+  color: white;
+}
+.menu_whatss {
+  display: none;
+}
+.menu_whatss img {
+  height: 60px;
+}
+@media (max-width: 900px) {
+  body {
+    margin-top: 40px;
+  }
+  .cardapio-items {
+    font-size: 1rem;
+  }
+  .cardapio-descricao {
+    font-size: 1rem;
+  }
+  .cardapio-items span {
+    font-size: 1rem;
+  }
+  .cardapio-conteudo h1,
+  .cardapio-conteudo1 h1,
+  .calzone-infotext h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .cardapio-info img {
+    display: none;
+  }
+  .calzone-ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .calzone-ingredientes::after {
+    left: 30%;
+    width: max-content;
+  }
+  .cardapio-nome {
+  }
+  .cardapio-items div {
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+  }
+  .ingredientes-header p {
+    margin: 0 20px;
+  }
+  .calzone-ingredientes ul {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu_whatss {
+    display: inline-block;
+    position: fixed;
+    top: 90%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .calzone-ingredientes::after {
+    left: 20%;
+    width: max-content;
+  }
+}

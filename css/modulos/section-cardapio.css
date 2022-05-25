@@ -1,0 +1,151 @@
+.cardapio {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  width: 100%;
+  height: 355px;
+  position: relative;
+}
+.section-esfihas {
+  background-image: url("../../Img/backgrounds/esfihas-retangulo.png");
+  background-position: top right;
+  margin-top: -20px;
+}
+.section-pizza {
+  justify-content: right;
+  background-image: url("../../Img/backgrounds/pizza-retangulo.png");
+  background-position: top left;
+  margin-top: -25px;
+}
+.section-calzone {
+  background-image: url("../../Img/backgrounds/calzone-retangulo.png");
+  background-position: top right;
+  margin-top: 20px;
+}
+.section-esfihas div::before,
+.section-calzone div::before {
+  content: "";
+  background-image: url(../../Img/Vectors/left-red-arrow.svg);
+  left: -120px;
+  margin-left: calc((100% - 22vw) - 40px);
+}
+.section-pizza div::before{
+  content: "";
+  background-image: url(../../Img/Vectors/right-green-arrow.svg);
+  right: 120px;
+  margin-right: calc((100% - 22vw) - 300px)
+}
+
+
+.section-esfihas::before,
+.section-calzone::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: var(--cor-verde);
+  position: absolute;
+  right: 0;
+}
+.section-pizza::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background-color: var(--cor-vermelha);
+  position: absolute;
+  left: 0;
+}
+.cardapio div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 350px;
+  padding: 20px;
+  position: relative;
+}
+.section-calzone div,
+.section-esfihas div {
+  margin-left: calc((100% - 30vw) - 750px);
+}
+.section-pizza div{
+  margin-right: calc((100% - 45vw) - 550px);
+}
+.cardapio div::before {
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  top: -25px;
+}
+@media (max-width: 700px) {
+  .section-calzone h3,
+  .section-pizza h3,
+  .section-esfihas h3{
+    font-size: 1.75rem;
+  }
+  .section-calzone h1,
+  .section-pizza h1,
+  .section-esfihas h1{
+    font-size: 4rem;
+    margin: 0 10px;
+  }
+  .section-calzone div,
+  .section-pizza div,
+  .section-esfihas div{
+    width:min-content;
+  }
+  .promocoes-bg{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1050px) {
+  .cardapio div:nth-child(odd) {
+    margin: 0;
+  }
+  .cardapio {
+    justify-content: center;
+  }
+  .cardapio h1,
+  .cardapio h3 {
+    color: white;
+  }
+
+  .cardapio div {
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0;
+  }
+  .cardapio div::before {
+    display: none;
+  }
+  .section-esfihas div {
+    border: solid 5px var(--cor-vermelha);
+  }
+  .section-pizza div {
+    border: solid 5px #fff;
+  }
+  .section-calzone div {
+    border: solid 5px var(--cor-verde);
+  }
+}
+@media (min-width: 1300px) {
+  .section-esfihas div::before,
+  .section-calzone div::before {
+    margin-left: 30px;
+  }
+  .section-esfihas div,
+  .section-calzone div{
+    margin-left: 90px;
+  }
+  .section-pizza div{
+    margin-right: 90px;
+  }
+  .section-pizza div::before{
+    right: -110px;
+    margin-right: 0;
+  }
+
+}

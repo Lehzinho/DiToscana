@@ -1,0 +1,33 @@
+.promocoes-bg {
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+.promocoes-bg h1 {
+  text-align: center;
+}
+.promocoes {
+  display: flex;
+  gap: 20px;
+}
+.cupon {
+  width: 300px;
+  height: 400px;
+  border: 10px dashed black;
+  border-radius: 50px;
+  margin-top: 60px;
+}
+@media (max-width: 1050px) {
+  .promocoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .cupon {
+    margin: auto;
+    width: 600px;
+  }
+  .promocoes-bg h1 {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,82 @@
+.header-bg{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url("../../Img/img_optimizadas/Pizza-menu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container::after{
+  content: "";
+  background: url(../../Img/backgrounds/269.jpg);
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.header-bg img{
+  width: 200px;
+  margin: 20px 0 0 10%;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header nav{
+  display: inline-block;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+}
+.header ul{
+  display: flex;
+  gap: 20px;
+  color: white;
+  margin-right: 40px;
+}
+.header a{
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+.header a::after{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background-color: white;
+  left: 10px;
+  bottom: 6px;
+  transition: .3s ease-in-out;
+}
+
+.header a:hover::after{
+  width: 80%;
+}
+.informacao{
+  display: inline-block;
+  justify-self: center;
+}
+.informacao h2{
+  margin-top: 40px;
+  padding-left: 25px;
+}
+.informacao h1{
+  margin-bottom: 100px;
+}
+
+@media (max-width: 700px) {
+  .header{
+    justify-content: center;
+  }
+  .header img{
+    margin: 0;
+    padding: 0;
+  }
+  .header ul{
+    margin: 0;
+  }
+}

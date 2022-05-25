@@ -1,0 +1,11 @@
+@import url(./modulos/main.css);
+@import url(./modulos/global.css);
+@import url(./modulos/tipografia-cor.css);
+@import url(./modulos/section-informacao.css);
+@import url(./modulos/section-promocoes.css);
+@import url(./modulos/section-cardapio.css);
+@import url(./modulos/section-footer.css);
+@import url(./modulos/cardapio/calzone.css);
+@import url(./modulos/cardapio/esfihas.css);
+@import url(./modulos/cardapio/pizzas.css);
+@import url(./modulos/cardapio/cardapio-header.css);
