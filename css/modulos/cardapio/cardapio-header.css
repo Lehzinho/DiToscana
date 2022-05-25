@@ -38,8 +38,6 @@
 .cardapio-conteudo {
   padding-bottom: 500px;
 }
-.cardapio-conteudo1 {
-}
 
 .cardapio-conteudo h1,
 .cardapio-conteudo1 h1 {
@@ -110,8 +108,8 @@
   height: 60px;
 }
 @media (max-width: 900px) {
-  body {
-    margin-top: 40px;
+  .cardapio-completo{
+    margin-top: 30px;
   }
   .cardapio-items {
     font-size: 1rem;
@@ -138,8 +136,6 @@
   .calzone-ingredientes::after {
     left: 30%;
     width: max-content;
-  }
-  .cardapio-nome {
   }
   .cardapio-items div {
     display: flex;
