@@ -27,7 +27,7 @@
   font-weight: 700;
 }
 .calzone-ingredientes::after{
-  content: "R$40,00";
+  content: "R$50,00";
   position: absolute;
   top: 140px;
   right: -200px;
