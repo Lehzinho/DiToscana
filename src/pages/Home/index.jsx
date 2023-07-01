@@ -13,6 +13,7 @@ import { Avaliacoes, Combos, Content, Header, Produtos } from "./styles";
 
 export const Home = () => {
   return (
+    //teste
     <Content>
       <Header>
         <h2>O sabor que conquista</h2>
