@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import Background from "../../assets/peakpx.jpg";
 
-
-export const Container = styled.div `
+export const Container = styled.div`
   max-width: 1440px;
   display: grid;
   margin: 0 auto;
   grid-template-rows: min-content auto min-content;
   grid-template-areas: "nav" "content" "footer";
   position: relative;
-
 
   &::before,
   &::after {
@@ -43,7 +41,7 @@ export const Container = styled.div `
   }
 `;
 
-export const Content = styled.section `
+export const Content = styled.section`
   height: 100%;
   width: 100%;
   grid-area: content;
@@ -51,38 +49,37 @@ export const Content = styled.section `
 
   h2 {
     margin-top: 90px;
-    font-family: ${({theme}) => theme.FONTS[2]};
+    font-family: ${({ theme }) => theme.FONTS[2]};
     font-weight: 400;
   }
 `;
 
-export const Header = styled.div `
+export const Header = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-
   img {
-    width: clamp(250px, 60vw,800px);
+    width: clamp(250px, 60vw, 800px);
     height: clamp(150px, 45vw, 485px);
   }
 `;
 
-export const Combos = styled.div `
+export const Combos = styled.div`
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 0 80px;
-  background-color: ${({theme}) => theme.COLORS.TRANSPARENT};
+  background-color: ${({ theme }) => theme.COLORS.TRANSPARENT};
   text-align: center;
 
   p,
   h2 {
-    color: ${({theme}) => theme.COLORS.TEXT_COLOR};
+    color: ${({ theme }) => theme.COLORS.TEXT_COLOR};
   }
 
   p {
@@ -106,19 +103,19 @@ export const Combos = styled.div `
       height: 240px;
     }
   }
-@media (max-width: 900px){
-  padding: 0;
-  div:nth-child(2) {
-  flex-direction: column;
+  @media (max-width: 900px) {
     padding: 0;
+    div:nth-child(2) {
+      flex-direction: column;
+      padding: 0;
+    }
   }
-}
 `;
 
-export const Produtos = styled.div `
+export const Produtos = styled.div`
   --ImgWidth: clamp(250px, 35vw, 400px);
   --ImgGap: clamp(20px, 5vw, 80px);
-  
+
   text-align: center;
   h2 {
     margin-top: 20px;
@@ -144,8 +141,9 @@ export const Produtos = styled.div `
   .Images {
     display: flex;
     gap: var(--ImgGap);
-    width: calc(var(--ImgWidth ) * 2 + var(--ImgGap) + 50px);
+    width: calc(var(--ImgWidth) * 2 + var(--ImgGap) + 45px);
     overflow: hidden;
+    scroll-behavior: smooth;
     margin-top: 30px;
     padding: 20px;
 
@@ -153,20 +151,17 @@ export const Produtos = styled.div `
       border-radius: 5px;
       width: var(--ImgWidth);
       height: clamp(250px, 35vw, 400px);
-    box-shadow: 0 0 15px ${({theme})=> theme.COLORS.TRASPARENT};
-
+      box-shadow: 0 0 15px ${({ theme }) => theme.COLORS.TRASPARENT};
     }
-    
   }
-  @media (max-width: 650px){
-    .Images{
+  @media (max-width: 650px) {
+    .Images {
       width: 270px;
     }
   }
-
 `;
 
-export const Avaliacoes = styled.div `
+export const Avaliacoes = styled.div`
   text-align: center;
   div {
     display: flex;
@@ -176,7 +171,7 @@ export const Avaliacoes = styled.div `
     align-items: center;
     margin: 40px 0;
   }
-button{
-margin-bottom: 40px;
-}
+  a {
+    margin-bottom: 40px;
+  }
 `;

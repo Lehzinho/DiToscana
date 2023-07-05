@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import { avaliacoes } from "../../Content/Avaliacoes.js";
 import Calzone from "../../assets/Calzone.png";
@@ -12,6 +12,11 @@ import { Comments } from "../../components/Comments/index.jsx";
 import { Avaliacoes, Combos, Content, Header, Produtos } from "./styles";
 
 export const Home = () => {
+  const ref = useRef(null);
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
+
   return (
     //teste
     <Content>
@@ -35,14 +40,14 @@ export const Home = () => {
       <Produtos>
         <h2>Nossos Produtos</h2>
         <div>
-          <AiOutlineLeft />
-          <div className="Images">
-            <img src={Pizza4} alt="" />
+          <AiOutlineLeft onClick={() => scroll(-475)} />
+          <div className="Images" ref={ref}>
             <img src={Pizza2} alt="" />
             <img src={Pizza3} alt="" />
+            <img src={Pizza4} alt="" />
             <img src={Calzone} alt="" />
           </div>
-          <AiOutlineRight />
+          <AiOutlineRight onClick={() => scroll(+475)} />
         </div>
       </Produtos>
       <Avaliacoes>

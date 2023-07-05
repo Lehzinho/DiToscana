@@ -26,6 +26,8 @@ export const Contact = () => {
             <td>Segunda</td>
             <td>18:00 - 22:00 h</td>
             <td>Sexta-feira</td>
+
+            
             <td>18:00 - 23:00 h</td>
           </tr>
           <tr>

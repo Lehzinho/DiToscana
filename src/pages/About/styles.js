@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.div `
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ export const Content = styled.div `
   img {
     margin: 2.5rem auto;
     width: clamp(18rem, 75vw, 40rem);
-    height: clamp(13rem, 55vw,28.125rem);
+    height: clamp(13rem, 55vw, 28.125rem);
     flex-shrink: 0;
   }
   div {
@@ -30,7 +30,7 @@ export const Content = styled.div `
       text-align: center;
       width: 80%;
     }
-    button {
+    a {
       margin: 15px 0;
     }
   }
