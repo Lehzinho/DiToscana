@@ -4,18 +4,9 @@ import { Contato, Content, Horario, Local } from "./styles.js";
 export const Contact = () => {
   return (
     <Content>
-      <Contato>
-        <h2>Contato</h2>
-        <form>
-          <input type="text" />
-          <input type="text" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>Enviar</button>
-        </form>
-      </Contato>
       <Horario>
         <h2>Horário de Funcionamento</h2>
-        <table>
+        <table className="Desktop">
           <tr>
             <td>Domingo</td>
             <td>18:00 - 23:00 h</td>
@@ -26,8 +17,6 @@ export const Contact = () => {
             <td>Segunda</td>
             <td>18:00 - 22:00 h</td>
             <td>Sexta-feira</td>
-
-            
             <td>18:00 - 23:00 h</td>
           </tr>
           <tr>
@@ -41,6 +30,36 @@ export const Contact = () => {
             <td>18:00 - 22:00 h</td>
             <td></td>
             <td></td>
+          </tr>
+        </table>
+        <table className="Mobile">
+          <tr>
+            <td>Domingo</td>
+            <td>18:00 - 23:00 h</td>
+          </tr>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>18:00 - 22:00 h</td>
+          </tr>
+          <tr>
+            <td>Terça-feira</td>
+            <td className="fechado">Fechado</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>18:00 - 22:00 h</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>18:00 - 22:00 h</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>18:00 - 23:00 h</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>18:00 - 23:00 h</td>
           </tr>
         </table>
       </Horario>

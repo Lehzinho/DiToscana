@@ -23,9 +23,15 @@ export const Footer = () => {
         </ul>
       </Address>
       <Social>
-        <AiFillInstagram />
-        <AiFillFacebook />
-        <AiOutlineWhatsApp />
+        <a href="https://www.instagram.com/ditoscanapizzaria/">
+          <AiFillInstagram />
+        </a>
+        <a href="https://www.facebook.com/ditoscanapizzaria">
+          <AiFillFacebook />
+        </a>
+        <a href="https://wa.me/64992450606">
+          <AiOutlineWhatsApp />
+        </a>
       </Social>
       <Nav>
         <ul>
